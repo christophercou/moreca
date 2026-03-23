@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Para o neném moorr❤️</title>
+
+<style>
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    margin: 0;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+button {
+    background: #ff4d6d;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff1e4d;
+}
+
+#mensagem {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>oi moreca ❤️</h1>
+<p>escolhe um aqui em baixo nenecuda 👇</p>
+
+<button onclick="resposta('amor')">vc ama eu morr?</button>
+<button onclick="resposta('saudade')">ta com sdds morr?</button>
+
+<div id="mensagem"></div>
+
+<script>
+function resposta(tipo) {
+    let texto = "";
+
+    if (tipo === "amor") {
+        texto = "eu sabia mor vc é o amor da minha vida ❤️";
+    } 
+    else if (tipo === "saudade") {
+        texto = "então vem cá mor ❤️";
+    }
+
+    document.getElementById("mensagem").innerHTML = texto;
+    document.getElementById("mensagem").style.display = "block";
+}
+</script>
+
+</body>
+</html>
